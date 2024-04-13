@@ -141,8 +141,14 @@ h1 {
   width: 100px;
   display: block;
 }
+.head-br {
+  display: none;
+}
 
 @media (max-width: 400px) {
+  .head-br {
+    display: inline;
+  }
   h1 {
     font-size: 24px;
   }
