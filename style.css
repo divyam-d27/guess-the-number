@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Syne", sans-serif;
+  color: #fff;
+  /* color: #000; */
+}
+body {
+  background-color: black;
+}
+.app {
+  /* background-color: #60b347; */
+  height: 100vh;
+}
+
+/* first section */
+.heading {
+  position: relative;
+}
+header {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+h1 {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.between {
+  position: absolute;
+  right: -5%;
+  bottom: -20%;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 1px;
+  /* margin-right: -50px; */
+  font-family: "Dancing Script", sans-serif;
+}
+.number {
+  font-size: 80px;
+  height: 120px;
+  width: 120px;
+  line-height: 1;
+  border: 1px solid #fff;
+  font-family: "Dancing Script", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* second section */
+.start-guess {
+  height: 25%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.message {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.guess {
+  background: none;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.guess::placeholder {
+  font-size: 14px;
+}
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+/* third section */
+.again-score {
+  height: 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score-container,
+.again-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.label-score,
+.label-highscore {
+  font-size: 24px;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+.again > span {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 3px;
+  margin-right: -40px;
+  font-family: "Dancing Script", sans-serif;
+}
+.again > svg {
+  margin-top: -10px;
+  fill: #fff;
+  opacity: 0.7;
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 28px;
+  }
+  .between {
+    font-size: 12px;
+    bottom: -50%;
+  }
+  .message {
+    font-size: 18px;
+  }
+  .input-container {
+    flex-direction: column;
+  }
+  .guess {
+    font-size: 18px;
+  }
+  .guess::placeholder {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .label-highscore,
+  .label-score {
+    font-size: 18px;
+  }
+  .again > span {
+    font-size: 14px;
+    margin-right: -25px;
+    margin-top: -2px;
+  }
+  .again > svg {
+    height: 50px;
+    width: 50px;
+    margin-top: -4px;
+  }
+}

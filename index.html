@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="heading">
+          <h1>Guess The Number!</h1>
+          <p class="between">... between 1 to 20</p>
+        </div>
+        <div class="number">?</div>
+      </header>
+      <section class="start-guess">
+        <p class="message">Start guessing...</p>
+        <div class="input-container">
+          <input
+            type="text"
+            placeholder="Enter number..."
+            class="guess"
+            inputmode="numeric"
+          />
+          <button class="btn check">Check!</button>
+        </div>
+      </section>
+      <section class="again-score">
+        <div class="score-container">
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+        <div class="again-container">
+          <button class="btn again">
+            <span>Play again...</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M125.7 160H176c17.7 0 32 14.3 32 32s-14.3 32-32 32H48c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32s32 14.3 32 32v51.2L97.6 97.6c87.5-87.5 229.3-87.5 316.8 0s87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3s-163.8-62.5-226.3 0L125.7 160z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
